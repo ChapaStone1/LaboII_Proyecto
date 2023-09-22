@@ -9,8 +9,8 @@
     
     <body>
         <header>
-            <img src="img/logo.png" alt="logo">
-            <form action="servidor.html" method="post">
+            <img src="img/logo.png" alt="logo" title ="Logo de la compania J&E Indumentaria">
+            <form action="busqueda.html" method="post">
                 <label for="in-busqueda">
                     <span class="material-symbols-outlined"> search </span>
                 </label>
@@ -40,27 +40,209 @@
         </header>
         <main>
             <article>
-                <img src="img/prod1.jpg" alt="producto 1">
+                <img src="img/img1.png" alt="producto 1">
+                <p><s>20000$</s></p>
+                <p>18000$</p>
+                <form action="pagos.html" method="POST">
+                    <fieldset>
+                        <legend>Cuotas sin interés:</legend>
+                        <label for="in-1cuota">1</label>
+                        <input 
+                            type="radio" 
+                            value="1" 
+                            name="cuotas" 
+                            id="in-1cuota"
+                            checked
+                        >
+                        <label for="in-3cuotas">3</label>
+                        <input 
+                            type="radio" 
+                            value="3" 
+                            name="cuotas" 
+                            id="in-3cuotas"
+                        >
+                        <label for="in-6cuotas">6</label>
+                        <input 
+                            type="radio" 
+                            value="6" 
+                            name="cuotas" 
+                            id="in-6cuotas"
+                        >
+                        <label for="in-12cuotas">12</label>
+                        <input 
+                            type="radio" 
+                            value="12" 
+                            name="cuotas"
+                            id="in-12cuotas"
+                        >
+                    </fieldset>
+                    <label for="sel-talle">Talles disponibles:</label>
+                    <select name="talle" id="sel-talle">
+                        <option selected value="">XS</option>
+                        <option value="S" disabled>S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL" disabled>XL</option>
+                        <option value="XXL" disabled>XXL</option>
+                        <option value="XXXL">XXXL</option>
+                    </select>
 
-
+                    <input type="submit" value="Añadir al carrito">
+                </form>
+                <h2>Buzo frizado hombre</h2>
             </article>
+            <article>
+                <img src="img/img2.png" alt="producto 2" title="Producto 2 remera unisex niño">
+                <p><s>10000$</s></p>
+                <p>9000$</p>
+                <form action="pagos.html" method="POST">
+                    <fieldset>
+                        <legend>Cuotas sin interés:</legend>
+                        <label for="in-1cuota">1</label>
+                        <input 
+                            type="radio" 
+                            value="1" 
+                            name="cuotas" 
+                            id="in-1cuota"
+                            checked
+                        >
+                        <label for="in-3cuotas">3</label>
+                        <input 
+                            type="radio" 
+                            value="3" 
+                            name="cuotas" 
+                            id="in-3cuotas"
+                        >
+                        <label for="in-6cuotas">6</label>
+                        <input 
+                            type="radio" 
+                            value="6" 
+                            name="cuotas" 
+                            id="in-6cuotas"
+                        >
+                        <label for="in-12cuotas">12</label>
+                        <input 
+                            type="radio" 
+                            value="12" 
+                            name="cuotas"
+                            id="in-12cuotas"
+                        >
+                    </fieldset>
+                    <label for="sel-talle">Talles disponibles:</label>
+                    <select name="talle" id="sel-talle">
+                        <option selected value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L" disabled>L</option>
+                    </select>
 
+                    <input type="submit" value="Añadir al carrito">
+                </form>
+                <h2>Remera unisex niño 100% algodón</h2>
+            </article>
+            <article>
+                <img src="img/img3.png" alt="producto 3" title="Remera dama morley">
+                <p><s>20000$</s></p>
+                <p>18000$</p>
+                <form action="pagos.html" method="POST">
+                    <fieldset>
+                        <legend>Cuotas sin interés:</legend>
+                        <label for="in-1cuota">1</label>
+                        <input 
+                            type="radio" 
+                            value="1" 
+                            name="cuotas" 
+                            id="in-1cuota"
+                            checked
+                        >
+                        <label for="in-3cuotas">3</label>
+                        <input 
+                            type="radio" 
+                            value="3" 
+                            name="cuotas" 
+                            id="in-3cuotas"
+                        >
+                        <label for="in-6cuotas">6</label>
+                        <input 
+                            type="radio" 
+                            value="6" 
+                            name="cuotas" 
+                            id="in-6cuotas"
+                        >
+                        <label for="in-12cuotas">12</label>
+                        <input 
+                            type="radio" 
+                            value="12" 
+                            name="cuotas"
+                            id="in-12cuotas"
+                        >
+                    </fieldset>
+                    <label for="sel-talle">Talles disponibles:</label>
+                    <select name="talle" id="sel-talle">
+                        <option selected value="">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL" disabled>XL</option>
+                        <option value="XXL" disabled>XXL</option>
+                        <option value="XXXL">XXXL</option>
+                    </select>
+
+                    <input type="submit" value="Añadir al carrito">
+                </form>
+                <h2>Remera dama morley</h2>
+            </article>
 
         </main>
         <aside>
             <h3>RECOMENDADOS OUTLET</h3>
-            
+                <table>
+                    <tbody>
+                        <!-- recomendado1 -->
+                        <tr>
+                            <th style="border: 1px solid black;">$30000</th>
+                            <td rowspan="2" style="border: 1px solid black;"><a href="pagos.html"><img src="img/img4.png"></a></td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid black;">Zapatillas hombre</th>
+                        </tr>
+                        <!-- recomendado2 -->
+                        <tr>
+                            <th style="border: 1px solid black;">$25000</th>
+                            <td rowspan="2" style="border: 1px solid black;"><a href="pagos.html"><img src="img/img5.png"></a></td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid black;">Zapatillas dama</th>
+                        </tr>
+                        <!-- recomendado3 -->
+                        <tr>
+                            <th style="border: 1px solid black;">$25000</th>
+                            <td rowspan="2" style="border: 1px solid black;"><a href="pagos.html"><img src="img/img6.png"></a></td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid black;">Zapatillas hombre</th>
+                        </tr>
+                        <!-- recomendado4 -->
+                        <tr>
+                            <th style="border: 1px solid black;">$25000</th>
+                            <td rowspan="2" style="border: 1px solid black;"><a href="pagos.html"><img src="img/img7.png"></a></td>
+                        </tr>
+                        <tr>
+                            <th style="border: 1px solid black;">Zapatillas hombre</th>
+                        </tr>
+                    </tbody>
+                </table>
         </aside>
-
         <footer>
-        <section>
-            <h3>SEGUINOS EN REDES</h3>
-            <a></a>
-            <a></a>
-            <a></a>
-            <a></a>
-        </section>
-        <p>© - Desarrollado por grupo 7: Juan Jose Chaparro, Maria Eugenia Losada</p>     
+            <section>
+                <p>SEGUINOS EN REDES</p>
+                <a href="https://www.facebook.com"><img src="img/fb.ico"></a>
+                <a href="https://www.instagram.com"><img src="img/ig.ico"></a>
+                <a href="https://www.x.com"><img src="img/tw.ico"></a>
+                <a href="https://www.whatsapp.com"><img src="img/wapp.ico"></a>
+                <a href="https://www.youtube.com"><img src="img/yt.ico"></a>
+            </section>
+            <p>© - Desarrollado por grupo 7: Juan Jose Chaparro, Maria Eugenia Losada</p>     
         </footer>
     </body>
     
