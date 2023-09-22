@@ -11,7 +11,65 @@
         <header>
             <img src="img/logo.png" alt="logo" title ="Logo de la compania J&E Indumentaria" href="index.html">
         </header>
-        
+        <main>
+        <fieldset>
+            <legend> <h2> Formulario de pago </h2> </legend>
+            <form action="pago.html" method="post">
+                <label for="sel-tarjeta">Tarjetas aceptadas:</label>
+                    <select name="seleccionar tarjeta" id="sel-tarjeta">
+                        <option selected value="VisaD">Visa Debito</option>
+                        <option value="VisaC">Visa Credito</option>
+                        <option value="Cabal">Cabal</option>
+                        <option value="Coop">Coopeplus</option>
+                        <option value="Santander">Banco Santander</option>
+                        <option value="Frances">Banco Frances</option>
+                    </select>
+                <label for="nombre" id="in-nombre"> Nombre del titular de la tarjeta*: </label>
+                <input type="text" name="nombre" id="in-nombre" placeholder="Nombre del titular de la tarjeta" required>
+                <label for="numero" id="in-tarjeta"> Número de tarjeta*: </label>
+                <input type="text" name="tarjeta" id="in-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <fieldset>
+                <legend>Cantidad de cuotas:</legend>
+                <label for="in-1cuota">1</label>
+                <input 
+                    type="radio" 
+                    value="1" 
+                    name="cuotas" 
+                    id="in-1cuota"
+                    checked
+                >
+                <label for="in-3cuotas">3</label>
+                <input 
+                    type="radio" 
+                    value="3" 
+                    name="cuotas" 
+                    id="in-3cuotas"
+                >
+                <label for="in-6cuotas">6</label>
+                <input 
+                    type="radio" 
+                    value="6" 
+                    name="cuotas" 
+                    id="in-6cuotas"
+                >
+                <label for="in-12cuotas">12</label>
+                <input 
+                    type="radio" 
+                    value="12" 
+                    name="cuotas"
+                    id="in-12cuotas"
+                >
+            </fieldset>
+            <label for="in-email">Email para recibir boleta de pago*:</label>
+            <input 
+                type="email" 
+                id="in-email" 
+                name="useremail"
+                required
+            >
+        <button type="submit">Pagar</button>
+        </fieldset>
+        </main>
     </body>
     
 </html>
