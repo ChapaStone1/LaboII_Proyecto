@@ -28,6 +28,27 @@
                 <input type="text" name="nombre" id="in-nombre" placeholder="Nombre del titular de la tarjeta" required>
                 <label for="numero" id="in-tarjeta"> Número de tarjeta*: </label>
                 <input type="text" name="tarjeta" id="in-tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                <label for="in-cvv">CVV*:</label>
+                <input 
+                type="password" 
+                name="cardpass" 
+                id="in-cvv" 
+                minlength="3"
+                maxlength="3"
+                placeholder="XXX"
+                required
+                >
+                
+                <label for="in-mes">Mes y año de vencimiento*:</label>
+                    <input 
+                        type="text" 
+                        name="mes" 
+                        id="in-mes" 
+                        placeholder="MM/AA" 
+                        minlength="5"
+                        maxlength="5"
+                        required
+                    >
                 <fieldset>
                 <legend>Cantidad de cuotas:</legend>
                 <label for="in-1cuota">1</label>
@@ -65,8 +86,36 @@
                 type="email" 
                 id="in-email" 
                 name="useremail"
+                placeholder="correo@example.com"
                 required
             >
+            <fieldset>
+                <legend>Datos de envío:</legend>
+                <label for="in-provincia">Provincia*:</label>
+                    <input 
+                        type="text" 
+                        name="Provincia" 
+                        id="in-provincia" 
+                        required
+                    >
+                    <label for="in-localidad">Ciudad*:</label>
+                    <input 
+                        type="text" 
+                        name="Ciudad" 
+                        id="in-ciudad" 
+                        required
+                    >
+                    <label for="in-calle">Calle y número*:</label>
+                    <input 
+                        type="text" 
+                        name="Calle y numero" 
+                        id="in-calle" 
+                        required
+                    >
+
+            </fieldset>
+        
+        <button type="reset">Reestablecer</button>
         <button type="submit">Pagar</button>
         </fieldset>
         </main>
